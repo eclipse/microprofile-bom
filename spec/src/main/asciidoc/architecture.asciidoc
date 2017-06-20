@@ -50,6 +50,12 @@ The Maven coordinates for this Eclipse release are as follows:
 
 Here is the link to https://github.com/eclipse/microprofile-bom[the github repository] for this Eclipse-based project.
 
+Users of MicroProfile 1.1 can assume that the libraries present in the BOM are available for their use.  In addition they can assume that their runtime has access to the following configuration properties:
+
+- `microprofile.listen.address` - the address to which the application is bound to, a.k.a. the IP address to the machine or localhost if it is only listening on localhost
+- `microprofile.https.port` - if https is enabled for the given application, includes the port that the listener is available on
+- `microprofile.http.port` - if http is enabled for the given application, includes the port that the listener is avilable on
+
 
 [[microprofile1.0]]
 === MicroProfile 1.0 (JavaOne 2016)
