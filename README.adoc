@@ -28,13 +28,15 @@ Add this dependency (adjusting the version number appropriately) to your project
 ----
 <project ...>
 ...
-  <dependency>
-      <groupId>org.eclipse.microprofile</groupId>
-      <artifactId>microprofile-bom</artifactId>
-      <version>1.1.0-SNAPSHOT</version>
-      <type>pom</type>
-      <scope>provided</scope>
-  </dependency>
+    <dependencies>
+        <dependency>
+            <groupId>org.eclipse.microprofile</groupId>
+            <artifactId>microprofile-bom</artifactId>
+            <version>1.1.0</version>
+            <type>pom</type>
+            <scope>provided</scope>
+        </dependency>
+    </dependencies>
 </project>
 ----
 
