@@ -23,7 +23,7 @@
 :email: microprofile@googlegroups.com
 :revnumber: 1.1
 :revdate: 2017-08-06
-:revremark: Proposal
+:revremark: Final
 :version-label!:
 :sectanchors:
 :doctype: book
