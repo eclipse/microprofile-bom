@@ -26,8 +26,8 @@
 #   - for BND: dash must come before a classifier, such as RC1 (e.g. 1.0-RC1 is valid while 1.0RC1 is invalid)
 #RELEASE_VERSION=1.0-RC1
 #DEV_VERSION=1.0-SNAPSHOT
-#GIT_USER='Ondrej Mihalyi'
-#GIT_EMAIL='ondrej.mihalyi@gmail.com'
+#GIT_USER='Kevin Sutter'
+#GIT_EMAIL='kwsutter@gmail.com'
 ORIGIN_REMOTE_REPO=origin # - the name of the upstream repository to push changes to. It should be the main repository, not a fork
 BASE_REVISION=master # branch, tag or revision to make release from
 
