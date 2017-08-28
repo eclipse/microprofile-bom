@@ -1,3 +1,4 @@
+#!/bin/bash
 #######################################################################
 ## Copyright (c) 2016-2017 Contributors to the Eclipse Foundation
 ##
@@ -22,8 +23,6 @@
 
 #RELEASE_VERSION=1.0
 TAG=$RELEASE_VERSION
-TARGET_MAVEN_REPO="central::default::https://oss.sonatype.org/service/local/staging/deploy/maven2" # Maven central
-#TARGET_MAVEN_REPO="local::default::file:///tmp/maven-repository" # For testing - deploys to a local repository in /tmp
 
 # validates that variables are set
 if echo XX"$RELEASE_VERSION"XX | grep XXXX > /dev/null
@@ -33,7 +32,8 @@ if echo XX"$RELEASE_VERSION"XX | grep XXXX > /dev/null
   fi
 
 
-# add credentials for repository to settings.xml - for Maven Central, you need to have an account at Sonatype and access to the org.eclipse.microprofile group. See https://issues.sonatype.org/browse/OSSRH-32787
+# Add credentials for repository to settings.xml - for Maven Central, server id is `ossrh`
+# You need to have an account at Sonatype and access to the org.eclipse.microprofile group. See https://issues.sonatype.org/browse/OSSRH-32787
 
 # checkout release tag
 
@@ -53,7 +53,7 @@ git clean -f
 ##    </server>
 ##
 
-mvn --batch-mode -DaltDeploymentRepository="$TARGET_MAVEN_REPO" --projects .,api,tck -Pgpg-sign clean deploy
+mvn --batch-mode --projects . -Prelease clean deploy
 
 # don't continue if the mvn command fails or aborted
 if [[ x$? != x0 ]]
