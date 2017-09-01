@@ -18,12 +18,12 @@
 //
 // SPDX-License-Identifier: Apache-2.0
 
-= BOM for Microprofile
-:authors: Kevin Sutter
-:email: kwsutter@gmail.com
-:revnumber: 0.1
-:revdate: 2017-05-16
-:revremark: Proposal
+= Eclipse MicroProfile 1.1
+:authors: Kevin Sutter, David Blevins
+:email: microprofile@googlegroups.com
+:revnumber: 1.1
+:revdate: 2017-08-08
+:revremark: Final
 :version-label!:
 :sectanchors:
 :doctype: book
@@ -34,12 +34,11 @@
 :sectnumlevels: 4
 ifdef::backend-pdf[]
 :pagenums:
+:numbered:
 endif::[]
 
 
 include::license-alv2.asciidoc[]
-
-== Microprofile BOM
-
-
 include::architecture.asciidoc[]
+include::required-apis.asciidoc[]
+include::notices.asciidoc[]
