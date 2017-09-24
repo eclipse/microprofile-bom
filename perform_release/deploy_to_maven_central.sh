@@ -21,6 +21,8 @@
 ### Deploy to maven central
 ##############################
 
+TARGET_MAVEN_REPO="central::default::https://oss.sonatype.org/service/local/staging/deploy/maven2" # Maven central
+#TARGET_MAVEN_REPO="local::default::file:///tmp/maven-repository" # For testing - deploys to a local repository in /tmp
 #RELEASE_VERSION=1.0
 TAG=$RELEASE_VERSION
 
@@ -57,7 +59,7 @@ mvn --batch-mode --projects . -Prelease clean deploy
 
 # don't continue if the mvn command fails or aborted
 if [[ x$? != x0 ]]
-  then 
+  then
     echo ERROR, aborting
     exit
 fi
