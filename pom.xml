@@ -94,7 +94,7 @@
     </mailingLists>
 
     <modules>
-        <module>spec</module>
+        <!-- <module>spec</module> -->
     </modules>
 
     <properties>

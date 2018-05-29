@@ -20,29 +20,11 @@
 
 image:https://badges.gitter.im/eclipse/microprofile-bom.svg[link="https://gitter.im/eclipse/microprofile-bom"]
 
+[NOTE]
+The umbrella MicroProfile specification documents have been moved to the link:https://github.com/eclipse/microprofile[microprofile repo].  This microprofile-bom repo will be re-purposed to actually provide a BOM...
+
 # Eclipse MicroProfile "Bill of Materials"
 Eclipse github repository for defining the content of the MicroProfile deliverables.
 
 ## Usage
-Add this dependency (adjusting the version number appropriately) to your project's pom.xml:
-
-[source,xml]
-----
-<project ...>
-...
-    <dependencies>
-        <dependency>
-            <groupId>org.eclipse.microprofile</groupId>
-            <artifactId>microprofile</artifactId>
-            <version>1.3</version>
-            <type>pom</type>
-            <scope>provided</scope>
-        </dependency>
-    </dependencies>
-</project>
-----
-
-You will then be able to work with all the APIs supported by MicroProfile implementations.
-
-[NOTE]
-This style of BOM does not go in a <dependencyManagement>...</dependencyManagement> section, using import scope, and you cannot add dependencies declared in the BOM without version elements as is typically done with that style of BOM.
+TBD ...
