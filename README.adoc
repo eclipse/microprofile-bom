@@ -20,6 +20,8 @@
 
 image:https://badges.gitter.im/eclipse/microprofile-bom.svg[link="https://gitter.im/eclipse/microprofile-bom"]
 
+# Deprecated, development has been moved to https://github.com/eclipse/microprofile
+
 # Eclipse MicroProfile "Bill of Materials"
 Eclipse github repository for defining the content of the MicroProfile deliverables.
 
